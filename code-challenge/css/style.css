@@ -125,6 +125,8 @@ a.login:hover {
 @media (max-width: 800px) {
     .toast {
         position: fixed;
+    }
+}
 @media (max-width: 640px) {
     .toast {
         bottom: 10px;
