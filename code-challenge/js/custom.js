@@ -14,17 +14,21 @@ $(document).ready(function () {
         }
     });
 
-    /* Toast Notifications, populating by setTimeout functions */
+    /* Toast Notifications */
+    /* Initial Toast Notification, displaying on page load */
     $('#toast1').toast('show').delay(1000);
 
+    /* Toast Notification - Display after 5 seconds */
     setTimeout(function () {
         $('#toast2').toast('show').delay(1000);
     }, 5000);
 
+    /* Toast Notification - Display after 10 seconds */
     setTimeout(function () {
         $('#toast3').toast('show').delay(1000);
     }, 10000);
 
+    /* Toast Notification - Display after 15 seconds */
     setTimeout(function () {
         $('#toast4').toast('show').delay(1000);
     }, 15000);
