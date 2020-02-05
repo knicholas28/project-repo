@@ -7,19 +7,20 @@ body
     background: #fff;
 }
 
+/* Custom H1 class */
 h1.welcome-title {
     color: #000;
     font-size: 38px;
     font-weight: bold;
     letter-spacing: -.5px;
 }
-
 @media (max-width: 640px) {
     h1.welcome-title {
         font-size: 32px;
     }
 }
 
+/* Custom paragraph class */
 p.welcome-copy {
     font-size: 22px;
     color: #888;
@@ -31,10 +32,12 @@ p.welcome-copy {
     }
 }
 
+/* Custom padding */
 .wrapper-lg {
     padding: 40px 20px 0;
 }
 
+/* Custom button - takes original styling from bootstrap button and overrides properties where called for */
 .btn-custom {
     background-color: #99cc66;
     color: #fff !important;
@@ -44,10 +47,10 @@ p.welcome-copy {
     padding: 12px 30px;
 }
 
+/* Overwriting bootstrap carousel properties with custom styling */
 .carousel-indicators {
     bottom: -110px;
 }
-
 .carousel-indicators li {
     background-color: rgba(0,0,0,.3);
     width: 8px;
@@ -57,21 +60,25 @@ p.welcome-copy {
 .carousel-indicators li.active {
     background-color: #333;
 }
+
+/* Custom height class - drives position of button and indicators under carousel */
 .mhCustom {
     min-height: 450px;
     max-height: 450px;
 }
-
 @media (max-width: 640px) {
     .mhCustom {
         min-height: 530px;
         max-height: 530px;
     }
 }
+
+/* Custom margining */
 .mB40 {
     margin-bottom: 40px;
 }
 
+/* Styling for rotating banner images */
 .banner {
     max-height: 300px;
     min-height: 300px;
@@ -93,6 +100,7 @@ p.welcome-copy {
     background-image: url('../images/rotating-banner4.jpg');
 }
 
+/* Login URL styling */
 a.login {
     color: #fff;
     font-weight: bold;
@@ -103,18 +111,17 @@ a.login {
     z-index: 1;
     border-bottom: 1px dashed;
 }
-
 a.login:hover {
     opacity: .75;
 }
 
+/* Overwriting Bootstrap Toast properties with custom styling */
 .toast {
     position: absolute;
     bottom: 10px;
     right: 20px;
     z-index: 1;
 }
-
 @media (max-width: 640px) {
     .toast {
         right: 15%;
@@ -124,6 +131,7 @@ a.login:hover {
     padding: .75rem 1rem;
 }
 
+/* Custom font awesome icon sizing and assigned colors */
 .fa-2-5x {
     font-size: 2.5em;
 }
