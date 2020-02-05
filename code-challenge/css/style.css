@@ -1,4 +1,4 @@
-﻿body, p, h1, h2, h3, h4, h5, h6 {
+body, p, h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -60,11 +60,37 @@ p.welcome-copy {
 .carousel-indicators li.active {
     background-color: #333;
 }
+.carousel-control-next, .carousel-control-prev {
+    top: -30%;
+    opacity: 1;
+}
+@media (max-width: 800px){
+    .carousel-control-next, .carousel-control-prev {
+        display: none;
+    }
+}
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    width: 50px;
+    height: 50px;
+    -webkit-transition: all .218s ease;
+    -moz-transition: all .218s ease;
+    -o-transition: all .218s ease;
+    transition: all .218s ease;
+}
+.carousel-control-next-icon:hover, .carousel-control-prev-icon:hover {
+    opacity: .55;
+}
 
 /* Custom height class - drives position of button and indicators under carousel */
 .mhCustom {
-    min-height: 450px;
-    max-height: 450px;
+    min-height: 650px;
+    max-height: 650px;
+}
+@media (max-width: 1040px) {
+    .mhCustom {
+        min-height: 680px;
+        max-height: 680px;
+    }
 }
 @media (max-width: 800px) {
     .mhCustom {
@@ -80,12 +106,23 @@ p.welcome-copy {
 
 /* Styling for rotating banner images */
 .banner {
-    max-height: 300px;
-    min-height: 300px;
+    max-height: 500px;
+    min-height: 500px;
     background-size: cover;
-    background-position: center center;
+    background-position: 0 -170px;
     margin-right: -15px;
     margin-left: -15px;
+}
+@media (max-width: 1200px) {
+    .banner {
+        background-position: center center;
+    }
+}
+@media (max-width: 800px) {
+    .banner {
+        max-height: 300px;
+        min-height: 300px;
+    }
 }
 .banner.image1 {
     background-image: url('../images/rotating-banner1.jpg');
